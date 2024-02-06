@@ -1,9 +1,9 @@
-const divideArray = function (nums: number[], k: number): number[][] {
+const divideArray = function (nums, k) {
    // Step 1: Sort the input array in ascending order.
    nums.sort((a, b) => a - b);
 
    // Step 2: Initialize the result array to store subarrays meeting the criteria.
-   let result: number[][] = [];
+   let result = [];
 
    // Step 3: Iterate through the sorted array with a step of 3.
    for (let i = 0; i < nums.length; i += 3) {
